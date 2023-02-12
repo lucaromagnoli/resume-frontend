@@ -1,19 +1,20 @@
 import Header from "./Header";
 import CustomNavbar from "./Navbar";
 import Container from "react-bootstrap/Container";
-import {Outlet, redirect} from "react-router-dom";
+import Outlet from "./Outlet";
 import Footer from "./Footer";
-
+import { useNavigation } from "react-router-dom";
 
 export default function Root() {
-    return (
-            <>
-                <Header/>
-                <CustomNavbar/>
-                <Container className="main-container text-muted p-2">
-                    <Outlet />
-                </Container>
-              <Footer />
-           </>
-    );
+  const navigation = useNavigation();
+  return (
+    <>
+      <Header />
+      <CustomNavbar />
+      <Container className="main-container text-muted">
+        <Outlet />
+      </Container>
+      <Footer />
+    </>
+  );
 }

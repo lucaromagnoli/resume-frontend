@@ -1,14 +1,13 @@
-import axios, {AxiosResponse} from "axios";
+import axios, { AxiosResponse } from "axios";
 
 function getURL(): string {
   let url;
   if (import.meta.env.DEV) {
     url = "api/experiences";
-  }
-  else {
+  } else {
     url = "https://lr-resume.herokuapp.com/api/experiences";
   }
-  return url
+  return url;
 }
 
 async function fetchExperiences(): Promise<AxiosResponse> {
