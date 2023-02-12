@@ -14,5 +14,6 @@ export default defineConfig({
       }
     }
   },
+  base: "/resume-frontend/",
   plugins: [react(), svgr()],
 })
