@@ -107,7 +107,7 @@ export default function History(): JSX.Element {
   return <> {
       experiences.map(experience => {
         return (
-            <div className="p=2">
+            <div className="p-2">
               <ExperienceCard key={experience.key} startDate={experience.startDate} endDate={experience.endDate}
                               role={experience.role} companyName={experience.companyName}
                               description={experience.description} technologies={experience.technologies}/>
