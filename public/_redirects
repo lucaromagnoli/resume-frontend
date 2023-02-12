@@ -1,2 +1,2 @@
-/api/* https://lr-resume.herokuapp.com/:splat
+/api/* https://lr-resume.herokuapp.com/api/:splat
 /* /index.html 200
