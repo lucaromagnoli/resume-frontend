@@ -1,0 +1,33 @@
+$dark: #03001C;
+$primary: #301E67;
+$secondary: #5B8FB9;
+$info: rgba(130, 127, 217, 0.27);
+
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+
+
+.pdf-text {
+  font-size: 12px;
+  padding: 0;
+  margin-right: 3px;
+  vertical-align: bottom;
+}
+.version-container {
+  margin-bottom: auto;
+  margin-top: 12px;
+}
+
+.version-text {
+  font-size: 13px;
+  padding: 1px;
+  margin-right: 4px;
+}
+
+.main-container {
+  min-height: 600px;
+}
+
+.footer-container {
+  height: 8%;
+  text-align: center;
+}
