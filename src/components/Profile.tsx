@@ -16,7 +16,7 @@ export default function Profile(): JSX.Element {
   return (
     <div>
       <div className="text-center">
-        <h2 >Profile</h2>
+        <h2>Profile</h2>
         <hr />
       </div>
       <div dangerouslySetInnerHTML={{ __html: profile ? profile.text : "" }} />

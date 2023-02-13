@@ -1,7 +1,7 @@
 import { Button, Form } from "react-bootstrap";
 import React from "react";
 
-function ContactForm():JSX.Element {
+function ContactForm(): JSX.Element {
   return (
     <Form>
       <Form.Group className="mb-3" controlId="Email">
@@ -31,6 +31,5 @@ export default function Contact(): JSX.Element {
       </div>
       <ContactForm />
     </>
-
   );
 }

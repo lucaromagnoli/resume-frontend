@@ -25,11 +25,7 @@ export default function CustomNavbar(): JSX.Element {
               <Nav.Link href="/contact">Contact</Nav.Link>
             </Nav>
             <Navbar.Collapse className="justify-content-end">
-              <Nav.Link
-                href={pdf_url}
-                target="_blank"
-                className="p-2"
-              >
+              <Nav.Link href={pdf_url} target="_blank" className="p-2">
                 <Navbar.Text className="pdf-text">Download as PDF</Navbar.Text>
                 <FilePdf size="1.5em" color="#ffffff8c" />
               </Nav.Link>
