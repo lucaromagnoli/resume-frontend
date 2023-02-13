@@ -100,7 +100,10 @@ export default function History(): JSX.Element {
   }, []);
   return (
     <>
-      {" "}
+      <div className="text-center">
+        <h2>Work History</h2>
+      </div>
+      <hr />
       {experiences.map((experience) => {
         return (
           <div className="p-2">

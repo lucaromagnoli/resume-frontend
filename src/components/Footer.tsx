@@ -1,4 +1,4 @@
-export default function Footer() {
+export default function Footer(): JSX.Element {
   let year = new Date(Date.now()).getFullYear();
   return (
     <footer className="sticky-bottom footer-container bg-secondary">
