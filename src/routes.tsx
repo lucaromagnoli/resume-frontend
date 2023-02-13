@@ -1,9 +1,9 @@
 import type { RouteObject } from "react-router";
 import Root from "./components/Root";
 import Profile from "./components/Profile";
-import IndexComponent from "./components/Index";
 import History from "./components/History";
 import Contact from "./components/Contact";
+import Home from "./components/Home";
 
 const routes: RouteObject[] = [
   {
@@ -12,7 +12,7 @@ const routes: RouteObject[] = [
     children: [
       {
         index: true,
-        element: <IndexComponent />,
+        element: <Home />,
       },
       {
         path: "/profile",

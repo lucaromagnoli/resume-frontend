@@ -1,3 +1,22 @@
+import { fetchExperiences, fetchProfile } from "./api";
+import React, { useEffect, useState } from "react";
+import { Section } from "../types/section";
+import { Experience } from "../types/experience";
+
 export default function Profile() {
-  return <div>This is my profile</div>;
+  let [profile, setProfile] = useState<Section|null>(null)
+  useEffect(() => {
+    const fetchData = async () => {
+      const resp = await fetchProfile();
+      const result: Section = resp.data.results[0]
+      setProfile(result);
+    };
+    fetchData().catch(console.error);
+  }, []);
+
+  return (
+    <div>
+      <div dangerouslySetInnerHTML={{ __html: profile? profile.text : "" }} />
+    </div>
+  );
 }

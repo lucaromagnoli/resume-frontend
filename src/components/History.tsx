@@ -2,8 +2,8 @@ import { Card } from "react-bootstrap";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import React, { useEffect, useState } from "react";
-import fetchExperiences from "./api";
-import { Experience, Tech } from "./experience";
+import { fetchExperiences } from "./api";
+import { Experience, Tech } from "../types/experience";
 import { getTechIcon } from "./icons";
 import _ from "lodash";
 
