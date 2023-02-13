@@ -2,7 +2,7 @@ import { fetchProfile } from "./api";
 import React, { useEffect, useState } from "react";
 import { Section } from "../types/section";
 
-export default function Profile() {
+export default function Profile(): JSX.Element {
   let [profile, setProfile] = useState<Section | null>(null);
   useEffect(() => {
     const fetchData = async () => {

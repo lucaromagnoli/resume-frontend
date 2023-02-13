@@ -3,7 +3,7 @@ import Container from "react-bootstrap/Container";
 import { FilePdf } from "react-bootstrap-icons";
 import React from "react";
 
-export default function CustomNavbar() {
+export default function CustomNavbar(): JSX.Element {
   const pdf_url = import.meta.env.VITE_BACKEND_BASE_URI + "pdf";
   return (
     <div>

@@ -3,7 +3,7 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import { Github, Linkedin, StackOverflow } from "react-bootstrap-icons";
 
-export default function Header() {
+export default function Header(): JSX.Element {
   return (
     <div className="bg-dark">
       <Container>

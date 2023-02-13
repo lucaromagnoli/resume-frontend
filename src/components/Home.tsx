@@ -11,7 +11,7 @@ function getLinks(links: string[]) {
     );
   });
 }
-export default function Home() {
+export default function Home(): JSX.Element {
   let [home, setHome] = useState<Section | null>(null);
   useEffect(() => {
     const fetchData = async () => {
@@ -25,7 +25,7 @@ export default function Home() {
   return (
     <div>
       <div className="text-center">
-        <h2>Home</h2>
+        <h2>127.0.0.1</h2>
         <hr />
       </div>
       <div dangerouslySetInnerHTML={{ __html: home ? home.text : "" }} />
