@@ -9,7 +9,7 @@ to = "https://lr-resume.herokuapp.com/api/:splat"
 status = 200
 
 [[headers]]
-for = "/api"
+for = "/api/*"
 [headers.values]
 # COMMENT: Multi-key header rules are expressed with multi-line strings
 sec-fetch-site = 'cross-origin'
