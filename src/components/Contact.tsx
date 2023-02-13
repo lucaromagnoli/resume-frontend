@@ -4,29 +4,35 @@ import React from "react";
 function ContactForm() {
   return (
     <Form>
-      <Form.Group className="mb-3" controlId="formBasicEmail">
+      <Form.Group className="mb-3" controlId="Email">
         <Form.Label>Email address</Form.Label>
         <Form.Control type="email" placeholder="Enter email" />
-        <Form.Text className="text-muted">
-          We'll never share your email with anyone else.
-        </Form.Text>
+      </Form.Group>
+      <Form.Group className="mb-3" controlId="Subject">
+        <Form.Label>Subject</Form.Label>
+        <Form.Control type="email" placeholder="Enter subject" />
+      </Form.Group>
+      <Form.Group className="mb-3" controlId="Textarea">
+        <Form.Label>Message</Form.Label>
+        <Form.Control as="textarea" rows={3} />
       </Form.Group>
 
-      <Form.Group className="mb-3" controlId="formBasicPassword">
-        <Form.Label>Password</Form.Label>
-        <Form.Control type="password" placeholder="Password" />
-      </Form.Group>
-      <Form.Group className="mb-3" controlId="formBasicCheckbox">
-        <Form.Check type="checkbox" label="Check me out" />
-      </Form.Group>
+
       <Button variant="primary" type="submit">
-        Submit
+        Send
       </Button>
     </Form>
   );
 }
 export default function Contact() {
   return (
-    <ContactForm />
+    <>
+      <div className="text-center">
+        <h2>Get in touch</h2>
+        <hr />
+      </div>
+      <ContactForm />
+    </>
+
   );
 }

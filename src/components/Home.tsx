@@ -24,6 +24,10 @@ export default function Home() {
 
   return (
     <div>
+      <div className="text-center">
+        <h2>Home</h2>
+        <hr />
+      </div>
       <div dangerouslySetInnerHTML={{ __html: home ? home.text : "" }} />
       <div>{getLinks(home ? home.links : [])}</div>
     </div>
