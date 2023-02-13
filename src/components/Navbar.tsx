@@ -4,6 +4,7 @@ import { FilePdf } from "react-bootstrap-icons";
 import React from "react";
 
 export default function CustomNavbar() {
+  const pdf_url = import.meta.env.VITE_BACKEND_BASE_URI + "pdf";
   return (
     <div>
       <Navbar
@@ -25,7 +26,7 @@ export default function CustomNavbar() {
             </Nav>
             <Navbar.Collapse className="justify-content-end">
               <Nav.Link
-                href="https://lr-resume.herokuapp.com/pdf"
+                href={pdf_url}
                 target="_blank"
                 className="p-2"
               >
