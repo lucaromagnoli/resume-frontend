@@ -54,12 +54,12 @@ function ExperienceCard(props: Experience) {
           <div className="text-muted">
             {startDate} to {endDate}
           </div>
-          <div className="text-secondary">{props.role}</div>
-          <div className="text-secondary">
+          <div className="text-primary">{props.role}</div>
+          <div className="text-primary">
             <a
               href=""
               target="_blank"
-              className="text-primary text-decoration-none text-secondary"
+              className="text-primary text-decoration-none text-primary"
             >
               {props.companyName}
             </a>

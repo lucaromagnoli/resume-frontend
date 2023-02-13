@@ -11,7 +11,7 @@ export default function CustomNavbar() {
         collapseOnSelect
         sticky="top"
         expand="sm"
-        bg="secondary"
+        bg="primary"
         variant="dark"
         className="nav-fill w-100"
       >
