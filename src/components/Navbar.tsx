@@ -25,7 +25,7 @@ export default function CustomNavbar() {
             </Nav>
             <Navbar.Collapse className="justify-content-end">
               <Nav.Link
-                href="http://127.0.0.1:8000/pdf"
+                href="https://lr-resume.herokuapp.com/pdf"
                 target="_blank"
                 className="p-2"
               >
