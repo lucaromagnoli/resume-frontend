@@ -7,9 +7,4 @@ status = 200
 from = "/api/*"
 to = "https://lr-resume.herokuapp.com/api/:splat"
 status = 200
-
-[[headers]]
-# Define which paths this specific [[headers]] block will cover.
-for = "/api/*"
-[headers.values]
-Access-Control-Allow-Origin = "*"
+headers = { Access-Control-Allow-Origin = "*" }
