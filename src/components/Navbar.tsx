@@ -22,7 +22,7 @@ export default function CustomNavbar() {
               <Nav.Link href="/">Home</Nav.Link>
               <Nav.Link href="/profile">Profile</Nav.Link>
               <Nav.Link href="/history">History</Nav.Link>
-              <Nav.Link href="/contact">Contact</Nav.Link>
+              {/*<Nav.Link href="/contact">Contact</Nav.Link>*/}
             </Nav>
             <Navbar.Collapse className="justify-content-end">
               <Nav.Link
