@@ -1,0 +1,15 @@
+[[redirects]]
+from = "/*"
+to = "/index.html"
+status = 200
+
+[[redirects]]
+from = "/api/*"
+to = "https://lr-resume.herokuapp.com/api/:splat"
+status = 200
+
+[[headers]]
+# Define which paths this specific [[headers]] block will cover.
+for = "/*"
+[headers.values]
+Access-Control-Allow-Origin = "*"
