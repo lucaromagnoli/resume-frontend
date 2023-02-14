@@ -30,3 +30,8 @@ $info: rgba(130, 127, 217, 0.27);
   height: 8%;
   text-align: center;
 }
+
+.link-unstyled, .link-unstyled:link, .link-unstyled:hover {
+  color: inherit;
+  text-decoration: inherit;
+}

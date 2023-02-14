@@ -10,8 +10,10 @@ export default function Header(): JSX.Element {
         <Row className="align-items-end text-light">
           <Col md={8}>
             <div className="p-4">
-              <h1 className="display-3 font-weight-bold">Luca Romagnoli</h1>
-              <h4>Software Engineer</h4>
+              <a href="/" className="link-unstyled">
+                <h1 className="display-3 font-weight-bold">Luca Romagnoli</h1>
+                <h4>Software Engineer</h4>
+              </a>
             </div>
           </Col>
           <Col>
